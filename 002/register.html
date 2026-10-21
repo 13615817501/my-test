@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="assets/tailwind.js"></script><script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "inverse-surface": "#3c2d28",
+          "on-tertiary-container": "#4a2a00",
+          "on-error": "#ffffff",
+          "inverse-primary": "#ffb59d",
+          "surface-tint": "#ab3500",
+          "on-error-container": "#93000a",
+          "inverse-on-surface": "#ffede8",
+          "tertiary": "#895100",
+          "on-tertiary": "#ffffff",
+          "primary-fixed-dim": "#ffb59d",
+          "primary-fixed": "#ffdbd0",
+          "surface-bright": "#fff8f6",
+          "error": "#ba1a1a",
+          "on-secondary-fixed-variant": "#005049",
+          "surface-container-lowest": "#ffffff",
+          "on-primary-fixed": "#390c00",
+          "tertiary-fixed-dim": "#ffb86b",
+          "on-secondary-fixed": "#00201d",
+          "surface-container-low": "#fff1ed",
+          "outline": "#8d7168",
+          "secondary-fixed-dim": "#4fdbcc",
+          "background": "#fff8f6",
+          "primary": "#ab3500",
+          "surface-container-high": "#fde3db",
+          "outline-variant": "#e1bfb5",
+          "secondary-container": "#70f8e8",
+          "tertiary-container": "#db8500",
+          "on-surface": "#261814",
+          "on-primary": "#ffffff",
+          "on-tertiary-fixed": "#2c1700",
+          "error-container": "#ffdad6",
+          "surface-variant": "#f7ddd5",
+          "surface": "#fff8f6",
+          "on-secondary-container": "#007168",
+          "on-primary-fixed-variant": "#832600",
+          "secondary-fixed": "#70f8e8",
+          "on-surface-variant": "#594139",
+          "on-tertiary-fixed-variant": "#683d00",
+          "on-secondary": "#ffffff",
+          "primary-container": "#ff6b35",
+          "surface-container": "#ffe9e3",
+          "surface-dim": "#eed5cd",
+          "surface-container-highest": "#f7ddd5",
+          "secondary": "#006a62",
+          "on-primary-container": "#5f1900",
+          "tertiary-fixed": "#ffdcbc",
+          "on-background": "#261814"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "space-xs": "0.25rem",
+          "margin": "1rem",
+          "gutter": "1rem",
+          "space-2xl": "3rem",
+          "space-xl": "2rem",
+          "space-sm": "0.5rem",
+          "space-md": "1rem",
+          "space-lg": "1.5rem"
+        },
+        "fontFamily": {
+          "body-md": ["Plus Jakarta Sans"],
+          "label-md": ["Plus Jakarta Sans"],
+          "label-sm": ["Plus Jakarta Sans"],
+          "label-lg": ["Plus Jakarta Sans"],
+          "body-sm": ["Plus Jakarta Sans"],
+          "headline-lg": ["Plus Jakarta Sans"],
+          "headline-md": ["Plus Jakarta Sans"],
+          "body-lg": ["Plus Jakarta Sans"],
+          "display-lg": ["Plus Jakarta Sans"],
+          "headline-sm": ["Plus Jakarta Sans"]
+        },
+        "fontSize": {
+          "body-md": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
+          "label-md": ["12px", {"lineHeight": "16px", "fontWeight": "600"}],
+          "label-sm": ["10px", {"lineHeight": "14px", "fontWeight": "500"}],
+          "label-lg": ["14px", {"lineHeight": "20px", "fontWeight": "600"}],
+          "body-sm": ["12px", {"lineHeight": "16px", "fontWeight": "400"}],
+          "headline-lg": ["24px", {"lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+          "headline-md": ["20px", {"lineHeight": "28px", "fontWeight": "600"}],
+          "body-lg": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+          "display-lg": ["36px", {"lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+          "headline-sm": ["16px", {"lineHeight": "24px", "fontWeight": "600"}]
+        }
+      }
+    }
+  }
+</script><link href="assets/fonts/f1.css" rel="stylesheet"/><link href="assets/fonts/f2.css" rel="stylesheet"/>
+<link href="assets/fonts/f3.css" rel="stylesheet"/><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-on-surface flex flex-col min-h-screen pb-safe"><header class="fixed top-0 inset-x-0 z-50 bg-surface/80 backdrop-blur-xl pt-safe shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-gutter flex items-center justify-between"><div class="flex items-center gap-space-sm"><button class="w-10 h-10 flex items-center justify-center text-on-surface rounded-full hover:bg-surface-variant transition-colors" onclick="history.back()"><span class="material-symbols-outlined">arrow_back</span></button><img alt="美食外卖 Logo" class="h-8 w-auto object-contain" src="assets/img20.jpg"/><span class="font-headline-md text-on-surface">Restaurant Detail</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="flex flex-col relative w-full px-gutter pt-16 bg-surface flex-grow"><div class="flex flex-col w-full pb-space-2xl">
+<!-- Warm Culinary Welcome Header -->
+<div class="flex flex-col items-center text-center pt-space-xl pb-space-lg px-gutter">
+<div class="w-20 h-20 rounded-full bg-surface-container-high flex items-center justify-center mb-space-md shadow-sm relative overflow-hidden group">
+<div class="absolute inset-0 bg-primary/10 rounded-full"></div>
+<span class="material-symbols-outlined text-[40px] text-primary" style="font-variation-settings: 'FILL' 1;">restaurant_menu</span>
+</div>
+<h1 class="font-headline-lg text-on-surface mb-space-xs">加入 美食外卖</h1>
+<p class="font-body-md text-on-surface-variant max-w-[280px]">
+      开启您的寻味之旅，发掘城中热辣美味，专享新人专属好礼！
+    </p>
+</div>
+<!-- Registration Card Container -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-[0_4px_20px_rgba(33,37,41,0.04)] flex flex-col gap-space-md mx-gutter">
+<!-- Phone Number Input -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-on-surface flex items-center justify-between">
+<span>手机号码</span>
+<span class="font-label-sm text-primary">免密一键登录</span>
+</label>
+<div class="flex items-center bg-surface-container-low rounded-lg px-space-md h-12 focus-within:ring-2 focus-within:ring-primary/20 transition-all">
+<span class="font-label-lg text-on-surface-variant mr-space-sm pr-space-sm border-r border-outline-variant">+86</span>
+<input class="bg-transparent w-full outline-none font-body-md text-on-surface placeholder:text-outline" id="phone-input" maxlength="11" placeholder="请输入11位手机号" type="tel"/>
+<span class="material-symbols-outlined text-outline hidden" id="phone-clear">cancel</span>
+</div>
+</div>
+<!-- Verification Code Input -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-on-surface">验证码</label>
+<div class="flex items-center gap-space-sm">
+<div class="flex items-center bg-surface-container-low rounded-lg px-space-md h-12 flex-grow focus-within:ring-2 focus-within:ring-primary/20 transition-all">
+<span class="material-symbols-outlined text-on-surface-variant mr-space-sm text-[20px]">mark_email_unread</span>
+<input class="bg-transparent w-full outline-none font-body-md text-on-surface placeholder:text-outline" maxlength="6" placeholder="请输入6位验证码" type="text"/>
+</div>
+<button class="h-12 px-space-md bg-secondary-container text-on-secondary-container font-label-md rounded-lg whitespace-nowrap hover:bg-secondary hover:text-on-secondary transition-colors active:scale-95" id="send-code-btn" type="button">
+          获取验证码
+        </button>
+</div>
+</div>
+<!-- Password Input -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-on-surface">设置密码</label>
+<div class="flex items-center bg-surface-container-low rounded-lg px-space-md h-12 focus-within:ring-2 focus-within:ring-primary/20 transition-all">
+<span class="material-symbols-outlined text-on-surface-variant mr-space-sm text-[20px]">lock</span>
+<input class="bg-transparent w-full outline-none font-body-md text-on-surface placeholder:text-outline" id="password-input" placeholder="8-20位，包含字母和数字" type="password"/>
+<button class="text-on-surface-variant flex items-center justify-center" onclick="togglePassword()" type="button">
+<span class="material-symbols-outlined text-[20px]" id="eye-icon">visibility_off</span>
+</button>
+</div>
+<!-- Password Strength Indicator -->
+<div class="flex items-center gap-space-xs pt-1">
+<div class="h-1.5 flex-1 bg-surface-variant rounded-full overflow-hidden transition-all" id="strength-1"></div>
+<div class="h-1.5 flex-1 bg-surface-variant rounded-full overflow-hidden transition-all" id="strength-2"></div>
+<div class="h-1.5 flex-1 bg-surface-variant rounded-full overflow-hidden transition-all" id="strength-3"></div>
+<span class="font-label-sm text-outline ml-space-xs" id="strength-text">密码强度</span>
+</div>
+</div>
+<!-- Terms and Conditions Checkbox -->
+<div class="flex items-start gap-space-sm pt-space-xs">
+<div class="relative flex items-center pt-0.5">
+<input class="peer sr-only" id="terms-checkbox" type="checkbox"/>
+<div class="w-5 h-5 bg-surface-container-low rounded-lg border-2 border-outline-variant peer-checked:bg-primary peer-checked:border-primary flex items-center justify-center transition-all cursor-pointer" onclick="document.getElementById('terms-checkbox').click(); updateRegisterState();">
+<span class="material-symbols-outlined text-on-primary text-[14px] opacity-0 peer-checked:opacity-100 transition-opacity">check</span>
+</div>
+</div>
+<label class="font-body-sm text-on-surface-variant cursor-pointer select-none" for="terms-checkbox">
+        我已阅读并同意 <a class="text-primary font-label-sm" href="#">《美食外卖用户协议》</a> 与 <a class="text-primary font-label-sm" href="#">《隐私政策》</a>，并授权使用本机号码快捷登录
+      </label>
+</div>
+<!-- Register Action Button -->
+<button class="w-full h-12 bg-primary text-on-primary font-label-lg rounded-lg shadow-md opacity-50 cursor-not-allowed transition-all flex items-center justify-center gap-space-xs mt-space-sm" disabled="" id="register-btn" type="button">
+<span>立即注册并领红包</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+<!-- Quick Social / Alternative Login -->
+<div class="flex flex-col items-center mt-space-2xl px-gutter">
+<div class="flex items-center w-full max-w-[240px] mb-space-lg">
+<div class="h-[1px] bg-outline-variant flex-grow"></div>
+<span class="font-label-sm text-outline px-space-md">已有账号？</span>
+<div class="h-[1px] bg-outline-variant flex-grow"></div>
+</div>
+<a class="text-primary font-label-md flex items-center gap-space-xs py-space-xs px-space-md rounded-full hover:bg-primary/5 transition-colors" href="#">
+<span>直接去登录</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</a>
+</div>
+<!-- Decorative Culinary Banner Card -->
+<div class="mx-gutter mt-space-xl rounded-xl p-space-md bg-surface-container-high flex items-center gap-space-md overflow-hidden relative">
+<div class="absolute -right-6 -bottom-6 w-24 h-24 rounded-full bg-primary/10 pointer-events-none"></div>
+<div class="w-16 h-16 rounded-lg bg-cover bg-center flex-shrink-0" data-alt="A delicious gourmet burger with melting cheese and fresh greens on a warm toasted sesame bun, styled with vibrant warm lighting and appetizing shadows for a food delivery app promo." style="background-image: url('assets/img21.jpg')"></div>
+<div class="flex flex-col flex-grow min-w-0">
+<span class="font-label-md text-on-surface flex items-center gap-1">
+        新客专享大礼包
+        <span class="material-symbols-outlined text-[14px] text-primary" style="font-variation-settings: 'FILL' 1;">local_activity</span>
+</span>
+<p class="font-body-sm text-on-surface-variant truncate">注册即送 30 元无门槛大红包，首单满减享不停！</p>
+</div>
+</div>
+<!-- Client-side Interaction Script -->
+<script>
+    function togglePassword() {
+      const pwdInput = document.getElementById('password-input');
+      const eyeIcon = document.getElementById('eye-icon');
+      if (pwdInput.type === 'password') {
+        pwdInput.type = 'text';
+        eyeIcon.textContent = 'visibility';
+      } else {
+        pwdInput.type = 'password';
+        eyeIcon.textContent = 'visibility_off';
+      }
+    }
+
+    // Interactive UI feedback & simple validation mock
+    const phoneInput = document.getElementById('phone-input');
+    const pwdInput = document.getElementById('password-input');
+    const termsCheckbox = document.getElementById('terms-checkbox');
+    const registerBtn = document.getElementById('register-btn');
+    const strength1 = document.getElementById('strength-1');
+    const strength2 = document.getElementById('strength-2');
+    const strength3 = document.getElementById('strength-3');
+    const strengthText = document.getElementById('strength-text');
+    const sendCodeBtn = document.getElementById('send-code-btn');
+
+    phoneInput.addEventListener('input', (e) => {
+      // Format or check length
+      updateRegisterState();
+    });
+
+    pwdInput.addEventListener('input', (e) => {
+      const val = e.target.value;
+      let strength = 0;
+      if (val.length >= 6) strength++;
+      if (/[A-Z]/.test(val) || /[0-9]/.test(val)) strength++;
+      if (/[^A-Za-z0-9]/.test(val)) strength++;
+
+      strength1.className = 'h-1.5 flex-1 rounded-full transition-all ' + (strength >= 1 ? 'bg-tertiary-container' : 'bg-surface-variant');
+      strength2.className = 'h-1.5 flex-1 rounded-full transition-all ' + (strength >= 2 ? 'bg-primary-container' : 'bg-surface-variant');
+      strength3.className = 'h-1.5 flex-1 rounded-full transition-all ' + (strength >= 3 ? 'bg-primary' : 'bg-surface-variant');
+
+      if (strength === 1) strengthText.textContent = '弱';
+      else if (strength === 2) strengthText.textContent = '中';
+      else if (strength >= 3) strengthText.textContent = '强';
+      else strengthText.textContent = '密码强度';
+
+      updateRegisterState();
+    });
+
+    // Handle checkbox custom click sync
+    const customCheckboxBox = termsCheckbox.nextElementSibling;
+    // We update state whenever inputs change
+    function updateRegisterState() {
+      const isPhoneValid = phoneInput.value.length === 11;
+      const isPwdValid = pwdInput.value.length >= 6;
+      const isChecked = termsCheckbox.checked;
+
+      if (isPhoneValid && isPwdValid && isChecked) {
+        registerBtn.removeAttribute('disabled');
+        registerBtn.classList.remove('opacity-50', 'cursor-not-allowed');
+        registerBtn.classList.add('hover:bg-primary-container', 'active:scale-[0.99]');
+      } else {
+        registerBtn.setAttribute('disabled', 'true');
+        registerBtn.classList.add('opacity-50', 'cursor-not-allowed');
+        registerBtn.classList.remove('hover:bg-primary-container', 'active:scale-[0.99]');
+      }
+    }
+
+    termsCheckbox.addEventListener('change', updateRegisterState);
+
+    // Countdown mock for code button
+    sendCodeBtn.addEventListener('click', () => {
+      if (phoneInput.value.length !== 11) {
+        // Shake or prompt
+        phoneInput.focus();
+        return;
+      }
+      let count = 60;
+      sendCodeBtn.setAttribute('disabled', 'true');
+      sendCodeBtn.classList.add('opacity-50');
+      const timer = setInterval(() => {
+        sendCodeBtn.textContent = count + 's后重试';
+        count--;
+        if (count < 0) {
+          clearInterval(timer);
+          sendCodeBtn.textContent = '获取验证码';
+          sendCodeBtn.removeAttribute('disabled');
+          sendCodeBtn.classList.remove('opacity-50');
+        }
+      }, 1000);
+    });
+
+    registerBtn.addEventListener('click', () => {
+      if (!registerBtn.hasAttribute('disabled')) {
+        // Delight effect: show success state
+        registerBtn.innerHTML = '<span class="material-symbols-outlined animate-spin text-[18px]">progress_activity</span> 正在注册...';
+        setTimeout(() => {
+          registerBtn.innerHTML = '<span class="material-symbols-outlined text-[18px]">check_circle</span> 注册成功！欢迎回家';
+          registerBtn.classList.remove('bg-primary');
+          registerBtn.classList.add('bg-secondary', 'text-on-secondary');
+        }, 1200);
+      }
+    });
+  </script>
+</div></main></body></html>

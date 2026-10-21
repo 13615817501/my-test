@@ -1,0 +1,240 @@
+<!DOCTYPE html><html lang="en" style=""><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"><meta content="mobile_stack" name="shell-type"><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="assets/tailwind.js"></script><script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "inverse-surface": "#3c2d28",
+          "on-tertiary-container": "#4a2a00",
+          "on-error": "#ffffff",
+          "inverse-primary": "#ffb59d",
+          "surface-tint": "#ab3500",
+          "on-error-container": "#93000a",
+          "inverse-on-surface": "#ffede8",
+          "tertiary": "#895100",
+          "on-tertiary": "#ffffff",
+          "primary-fixed-dim": "#ffb59d",
+          "primary-fixed": "#ffdbd0",
+          "surface-bright": "#fff8f6",
+          "error": "#ba1a1a",
+          "on-secondary-fixed-variant": "#005049",
+          "surface-container-lowest": "#ffffff",
+          "on-primary-fixed": "#390c00",
+          "tertiary-fixed-dim": "#ffb86b",
+          "on-secondary-fixed": "#00201d",
+          "surface-container-low": "#fff1ed",
+          "outline": "#8d7168",
+          "secondary-fixed-dim": "#4fdbcc",
+          "background": "#fff8f6",
+          "primary": "#ab3500",
+          "surface-container-high": "#fde3db",
+          "outline-variant": "#e1bfb5",
+          "secondary-container": "#70f8e8",
+          "tertiary-container": "#db8500",
+          "on-surface": "#261814",
+          "on-primary": "#ffffff",
+          "on-tertiary-fixed": "#2c1700",
+          "error-container": "#ffdad6",
+          "surface-variant": "#f7ddd5",
+          "surface": "#fff8f6",
+          "on-secondary-container": "#007168",
+          "on-primary-fixed-variant": "#832600",
+          "secondary-fixed": "#70f8e8",
+          "on-surface-variant": "#594139",
+          "on-tertiary-fixed-variant": "#683d00",
+          "on-secondary": "#ffffff",
+          "primary-container": "#ff6b35",
+          "surface-container": "#ffe9e3",
+          "surface-dim": "#eed5cd",
+          "surface-container-highest": "#f7ddd5",
+          "secondary": "#006a62",
+          "on-primary-container": "#5f1900",
+          "tertiary-fixed": "#ffdcbc",
+          "on-background": "#261814"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "space-xs": "0.25rem",
+          "margin": "1rem",
+          "gutter": "1rem",
+          "space-2xl": "3rem",
+          "space-xl": "2rem",
+          "space-sm": "0.5rem",
+          "space-md": "1rem",
+          "space-lg": "1.5rem"
+        },
+        "fontFamily": {
+          "body-md": ["Plus Jakarta Sans"],
+          "label-md": ["Plus Jakarta Sans"],
+          "label-sm": ["Plus Jakarta Sans"],
+          "label-lg": ["Plus Jakarta Sans"],
+          "body-sm": ["Plus Jakarta Sans"],
+          "headline-lg": ["Plus Jakarta Sans"],
+          "headline-md": ["Plus Jakarta Sans"],
+          "body-lg": ["Plus Jakarta Sans"],
+          "display-lg": ["Plus Jakarta Sans"],
+          "headline-sm": ["Plus Jakarta Sans"]
+        },
+        "fontSize": {
+          "body-md": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
+          "label-md": ["12px", {"lineHeight": "16px", "fontWeight": "600"}],
+          "label-sm": ["10px", {"lineHeight": "14px", "fontWeight": "500"}],
+          "label-lg": ["14px", {"lineHeight": "20px", "fontWeight": "600"}],
+          "body-sm": ["12px", {"lineHeight": "16px", "fontWeight": "400"}],
+          "headline-lg": ["24px", {"lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+          "headline-md": ["20px", {"lineHeight": "28px", "fontWeight": "600"}],
+          "body-lg": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+          "display-lg": ["36px", {"lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+          "headline-sm": ["16px", {"lineHeight": "24px", "fontWeight": "600"}]
+        }
+      }
+    }
+  }
+</script><link href="assets/fonts/f1.css" rel="stylesheet"><link href="assets/fonts/f2.css" rel="stylesheet">
+<link href="assets/fonts/f3.css" rel="stylesheet"><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-on-surface flex flex-col min-h-screen pb-safe"><header class="fixed top-0 inset-x-0 z-50 bg-surface/80 backdrop-blur-xl pt-safe shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-gutter flex items-center justify-between"><div class="flex items-center gap-space-sm"><button class="w-10 h-10 flex items-center justify-center text-on-surface rounded-full hover:bg-surface-variant transition-colors" onclick="history.back()"><span class="material-symbols-outlined">arrow_back</span></button><img alt="美食外卖 Logo" class="h-8 w-auto object-contain" src="assets/img12.jpg"><span class="font-headline-md text-on-surface">Restaurant Detail</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="flex flex-col relative w-full px-gutter pt-16 bg-surface flex-grow"><div class="flex flex-col w-full pb-space-2xl">
+<!-- Decorative Header Illustration / Welcome Banner -->
+<div class="flex flex-col items-center justify-center pt-space-xl pb-space-lg">
+<div class="w-20 h-20 rounded-full bg-primary-container flex items-center justify-center shadow-lg mb-space-md relative overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-tr from-primary to-primary-container opacity-50"></div>
+<span class="material-symbols-outlined text-[40px] text-on-primary relative z-10" style="font-variation-settings: &quot;FILL&quot; 1;">restaurant</span>
+</div>
+<h1 class="font-headline-lg text-on-surface text-center mb-space-xs">欢迎来到 美食外卖</h1>
+<p class="font-body-md text-on-surface-variant text-center max-w-xs">
+      发现周边极致美味，15分钟极速送达，尽享品质生活
+    </p>
+</div>
+<!-- Login Form Container -->
+<div class="bg-surface-container-low rounded-xl p-space-lg shadow-sm mb-space-xl">
+<div class="flex flex-col gap-space-md">
+<!-- Phone Number Input -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-on-surface-variant">手机号码</label>
+<div class="flex items-center bg-surface rounded-lg px-space-md py-3 shadow-[0_1px_3px_rgba(38,24,20,0.04)] focus-within:ring-2 focus-within:ring-primary transition-all">
+<span class="font-body-md text-on-surface-variant mr-3 font-semibold">+86</span>
+<span class="material-symbols-outlined text-outline mr-2 text-[20px]">smartphone</span>
+<input class="w-full bg-transparent font-body-md text-on-surface placeholder:text-outline-variant outline-none" id="phone-input" maxlength="11" placeholder="请输入手机号" type="tel">
+</div>
+</div>
+<!-- Verification Code Input -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-on-surface-variant">短信验证码</label>
+<div class="flex items-center gap-space-sm">
+<div class="flex-1 flex items-center bg-surface rounded-lg px-space-md py-3 shadow-[0_1px_3px_rgba(38,24,20,0.04)] focus-within:ring-2 focus-within:ring-primary transition-all">
+<span class="material-symbols-outlined text-outline mr-2 text-[20px]">mark_email_read</span>
+<input class="w-full bg-transparent font-body-md text-on-surface placeholder:text-outline-variant outline-none" id="code-input" maxlength="6" placeholder="请输入4位验证码" type="text">
+</div>
+<button class="bg-surface-variant text-on-surface-variant font-label-md px-space-md py-3 rounded-lg hover:bg-primary hover:text-on-primary transition-colors whitespace-nowrap" id="get-code-btn">
+            获取验证码
+          </button>
+</div>
+</div>
+<!-- Terms Checkbox -->
+<div class="flex items-start gap-space-sm pt-space-xs">
+<input class="mt-1 w-4 h-4 accent-primary rounded cursor-pointer" id="terms" type="checkbox">
+<label class="font-body-sm text-on-surface-variant leading-relaxed cursor-pointer" for="terms">
+          我已阅读并同意 <a class="text-primary font-semibold hover:underline" href="#">《用户服务协议》</a> 与 <a class="text-primary font-semibold hover:underline" href="#">《隐私政策》</a>
+</label>
+</div>
+<!-- Primary Action: Login Button -->
+<button class="w-full bg-primary text-on-primary font-label-lg py-3.5 rounded-lg shadow-md hover:bg-surface-tint active:scale-[0.99] transition-all flex items-center justify-center gap-space-xs mt-space-sm" onclick="handleLogin()">
+<span class="">一键登录 / 注册</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Third-party Login Section -->
+<div class="flex flex-col items-center gap-space-md mt-space-md">
+<div class="flex items-center w-full gap-space-md">
+<div class="flex-1 h-[1px] bg-outline-variant opacity-50"></div>
+<span class="font-label-sm text-outline">其他登录方式</span>
+<div class="flex-1 h-[1px] bg-outline-variant opacity-50"></div>
+</div>
+<div class="flex items-center justify-center gap-space-xl pt-space-xs"><!-- WeChat Login -->
+<button class="flex flex-col items-center gap-space-xs group cursor-pointer active:scale-[0.96] transition-all" onclick="thirdPartyLogin('微信')">
+  <div class="w-12 h-12 rounded-full bg-surface-container-lowest flex items-center justify-center text-[#07C160] shadow-[0_2px_8px_rgba(7,193,96,0.12)] border border-[#07C160]/20 group-hover:border-[#07C160]/40 group-hover:shadow-[0_4px_12px_rgba(7,193,96,0.2)] transition-all">
+    <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+      <path d="M8.691 2.188C3.891 2.188 0 5.478 0 9.53c0 2.212 1.17 4.203 3.002 5.55a.59.59 0 0 1 .213.665l-.39 1.48c-.019.07-.048.141-.048.213 0 .163.13.295.295.295a.326.326 0 0 0 .167-.054l1.903-1.114a.864.864 0 0 1 .717-.098 10.16 10.16 0 0 0 2.832.403c.256 0 .507-.014.757-.033-.198-.59-.307-1.218-.307-1.87 0-3.663 3.542-6.633 7.91-6.633.264 0 .524.015.782.039C16.814 5.926 13.064 2.188 8.691 2.188zm-2.484 4.09a1.08 1.08 0 1 1 0 2.16 1.08 1.08 0 0 1 0-2.16zm5.176 0a1.08 1.08 0 1 1 0 2.16 1.08 1.08 0 0 1 0-2.16zM15.82 9.074c-3.774 0-6.834 2.527-6.834 5.645 0 3.118 3.06 5.646 6.834 5.646.772 0 1.512-.108 2.203-.306a.71.71 0 0 1 .59.08l1.564.914a.268.268 0 0 0 .138.045c.135 0 .243-.109.243-.243a.62.62 0 0 0-.04-.175l-.32-1.216a.485.485 0 0 1 .174-.546c1.507-1.107 2.47-2.744 2.47-4.56 0-3.118-3.06-5.645-6.834-5.645zm-2.04 3.356a.887.887 0 1 1 0 1.774.887.887 0 0 1 0-1.774zm4.248 0a.887.887 0 1 1 0 1.774.887.887 0 0 1 0-1.774z"></path>
+    </svg>
+  </div>
+  <span class="font-body-sm text-on-surface-variant group-hover:text-on-surface transition-colors">微信</span>
+</button>
+<!-- Apple Login -->
+<button class="flex flex-col items-center gap-space-xs group cursor-pointer active:scale-[0.96] transition-all" onclick="thirdPartyLogin('Apple')">
+  <div class="w-12 h-12 rounded-full bg-surface-container-lowest flex items-center justify-center text-on-surface shadow-[0_2px_8px_rgba(0,0,0,0.06)] border border-outline-variant/60 group-hover:border-outline group-hover:shadow-[0_4px_12px_rgba(0,0,0,0.1)] transition-all">
+    <svg class="w-5 h-5 fill-current" viewBox="0 0 170 170">
+      <path d="M150.37 130.25c-2.45 5.66-5.35 10.87-8.71 15.66-4.58 6.53-8.33 11.05-11.22 13.56-4.48 4.12-9.28 6.23-14.42 6.35-3.69 0-8.14-1.05-13.32-3.18-5.19-2.12-9.97-3.17-14.34-3.17-4.58 0-9.49 1.05-14.75 3.17-5.26 2.13-9.5 3.24-12.74 3.35-4.35.13-9.16-1.9-14.42-6.08-3.69-3.06-7.7-7.91-12.04-14.56-6.19-9.5-11.07-20.08-14.65-31.75-3.58-11.66-5.37-22.9-5.37-33.71 0-13.68 3.41-25.2 10.24-34.56 6.83-9.36 15.48-14.16 25.96-14.41 5.38 0 11.14 1.45 17.27 4.36 6.13 2.91 10.14 4.41 12.04 4.5 1.57 0 5.72-1.6 12.45-4.8 6.74-3.2 12.43-4.63 17.07-4.3 12.73.66 22.82 5.4 30.27 14.23-11.09 6.74-16.5 15.99-16.24 27.76.26 9.4 3.86 17.18 10.8 23.33 6.94 6.16 15.08 9.57 24.43 10.23-2.14 6.3-4.78 12.59-7.92 18.88zm-30.73-108.06c0 6.64-2.4 12.87-7.21 18.69-5.87 6.84-13.06 10.9-21.56 12.18-.39-1.2-.59-2.32-.59-3.37 0-6.64 2.59-13.02 7.78-19.14 2.6-3.08 5.76-5.63 9.49-7.65 3.73-2.01 7.21-3.15 10.45-3.41.43 .9.64 1.8.64 2.7z"></path>
+    </svg>
+  </div>
+  <span class="font-body-sm text-on-surface-variant group-hover:text-on-surface transition-colors">Apple</span>
+</button></div>
+</div>
+<!-- Client-side Interactive Script -->
+<script>
+    const getCodeBtn = document.getElementById('get-code-btn');
+    const phoneInput = document.getElementById('phone-input');
+    const termsCheckbox = document.getElementById('terms');
+
+    getCodeBtn.addEventListener('click', () => {
+      const phone = phoneInput.value.trim();
+      if (!/^1[3-9]\d{9}$/.test(phone)) {
+        alert('请输入正确的11位手机号码');
+        return;
+      }
+      
+      let countdown = 60;
+      getCodeBtn.disabled = true;
+      getCodeBtn.classList.add('opacity-50', 'cursor-not-allowed');
+      
+      const timer = setInterval(() => {
+        getCodeBtn.textContent = `${countdown}s 后重试`;
+        countdown--;
+        if (countdown < 0) {
+          clearInterval(timer);
+          getCodeBtn.disabled = false;
+          getCodeBtn.classList.remove('opacity-50', 'cursor-not-allowed');
+          getCodeBtn.textContent = '获取验证码';
+        }
+      }, 1000);
+    });
+
+    function handleLogin() {
+      const phone = phoneInput.value.trim();
+      const code = document.getElementById('code-input').value.trim();
+
+      if (!/^1[3-9]\d{9}$/.test(phone)) {
+        alert('请输入正确的手机号码');
+        return;
+      }
+      if (code.length < 4) {
+        alert('请输入完整的验证码');
+        return;
+      }
+      if (!termsCheckbox.checked) {
+        alert('请先阅读并同意用户协议与隐私政策');
+        return;
+      }
+
+      alert('登录成功！欢迎来到美食外卖');
+    }
+
+    function thirdPartyLogin(provider) {
+      if (!termsCheckbox.checked) {
+        alert('请先阅读并同意用户协议与隐私政策');
+        return;
+      }
+      alert(`正在通过 ${provider} 授权登录...`);
+    }
+  </script>
+</div></main>
+
+</body></html>
